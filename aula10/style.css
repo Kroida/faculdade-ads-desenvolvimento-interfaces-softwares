@@ -1,0 +1,97 @@
+/* Define a fonte padrão e o fundo da página */
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+}
+
+/* Cabeçalho com sombra para destaque */
+.topo {
+    background-color: #fff;
+    box-shadow: 0px 2px 3px #444;
+    padding: 20px 40px;
+}
+
+/* Estilização do logotipo */
+.logo {
+    text-align: center;
+    font-size: 28px;
+    color: #84b840;
+    text-shadow: 1px 1px 2px #444;
+    font-weight: bold;
+}
+
+/* Estilização do menu */
+.menu ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Itens do menu em linha */
+.menu li {
+    display: inline-block;
+}
+
+/* Links do menu */
+.menu li a {
+    color: #404040;
+    text-decoration: none;
+    padding: 10px;
+    border: solid 2px transparent;
+}
+
+/* Efeito ao passar o mouse sobre os links */
+.menu li a:hover {
+    color: #84b840;
+    background-color: #404040;
+    border-radius: 5px;
+    border: solid 2px #84b840;
+}
+
+/* Seção de banner com gradiente e imagem */
+.banner {
+    height: 250px;
+    background: url(img/smile.png) no-repeat center center, 
+                linear-gradient(to right, rgba(84, 255, 232, 1) 0%, rgba(34, 255, 0, 1) 100%);
+}
+
+/* Mudança de fundo ao passar o mouse */
+.banner:hover {
+    background: url(img/smile0.png) no-repeat center center, purple;
+}
+
+/* Configuração do container principal */
+.container {
+    border: solid 2px #333;
+    padding: 40px 10px;
+    overflow: hidden;
+}
+
+/* Estilização das colunas */
+.container .col {
+    width: 250px;
+    height: 100px;
+    border: solid 2px #444;
+    float: left;
+    margin: 10px 20px;
+}
+
+/* Configuração dos diferentes tipos de overflow */
+.bloco1 {
+    /* O conteúdo excedente será ocultado dentro do elemento */
+    overflow: hidden;
+}
+
+.bloco2 {
+    /* Exibe barras de rolagem mesmo que o conteúdo caiba dentro do elemento */
+    overflow: scroll;
+    height: 250px !important;
+}
+
+.bloco3 {
+    /* Adiciona rolagem apenas se necessário */
+    overflow: auto;
+    height: 250px !important;
+}

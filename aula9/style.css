@@ -1,0 +1,86 @@
+/* Define a fonte padrão e o fundo da página */
+body {
+	font-family: verdana, sans-serif;
+	background-color: #444;
+	margin: 0;
+}
+
+/* Container principal */
+.container {
+	background-color: #fff;
+	padding: 20px;
+	width: 80%;
+	margin: 40px auto 500px auto;
+	overflow: hidden;
+	min-height: 800px;
+	/* position: relative; -> Serve de base para elementos absolutos */
+	position: relative;
+}
+
+/* Estilização das cartas */
+.carta {
+	border: solid 1px #999;
+	width: 200px;
+	margin: 10px;
+	float: left;
+	text-align: center;
+	padding: 70px 0;
+	border-radius: 10px;
+	/* Sombras para realce */
+	box-shadow: 3px 3px 4px 0px #333;
+	background-color: #fff;
+}
+
+/* Definições de posicionamento das cartas */
+/* static - relative - absolute - fixed */
+.bloco1 {	
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+.bloco2 {
+	position: absolute;
+	top: 40px;
+	left: 80px;
+	z-index: 9999;
+}
+
+.bloco3 {
+	position: absolute;
+	top: 80px;
+	left: 160px;
+	z-index: 9;
+}
+
+.bloco4 {
+	position: absolute;
+	top: 120px;
+	left: 240px;
+	z-index: 99;
+}
+
+/* Estilização do botão fixo de contato */
+.fale {
+	background-color: #3cc0a5;
+	width: 200px;
+	border: solid 1px #fff;
+	box-shadow: 0 0 5px #333;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	/* Fixa o botão no canto inferior direito */
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+}
+
+/* Estilo do link dentro do botão */
+.fale a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	/* Adiciona um leve efeito de sombra no texto */
+	text-shadow: 1px 1px 2px #333;
+}

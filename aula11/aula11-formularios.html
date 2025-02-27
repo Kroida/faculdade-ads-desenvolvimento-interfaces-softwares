@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+
+    <style type="text/css">
+        /* Define espaçamento entre os campos do formulário */
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Trabalhando com Formulários</h1>
+
+    <!-- 
+        method: define como os dados são enviados (get ou post)
+        action: especifica para onde os dados serão enviados
+    -->
+
+    <form method="get" action="example.com">
+        <!-- Campo para nome completo -->
+        <label for="nome">Nome Completo:</label>
+        <input id="nome" type="text" name="nome" placeholder="Seu Nome" required>
+
+        <!-- Campo para e-mail -->
+        <label for="email">Seu E-mail:</label>
+        <input id="email" type="email" name="email" placeholder="Seu Email" required>
+
+        <!-- Campo para idade com limites definidos -->
+        <label for="idade">Idade:</label>
+        <input id="idade" type="number" name="idade" placeholder="Sua idade" min="3" max="10">
+
+        <!-- Botão de envio do formulário -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

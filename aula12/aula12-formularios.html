@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+
+    <style type="text/css">
+        /* Ajuste de espaçamento entre os inputs */
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Ajustes para inputs do tipo checkbox e radio */
+        .check input {
+            display: inline-block;
+        }
+
+        .check label {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Trabalhando com Formulários</h1>
+
+    <!-- 
+        method: define o método de envio (GET ou POST)
+        action: URL para onde os dados serão enviados
+        enctype: necessário para envio de arquivos
+    -->
+    <form method="get" action="example.com" enctype="multipart/form-data">
+
+        <!-- Campo oculto para envio de dados invisíveis ao usuário -->
+        <input type="hidden" name="oculto" value="5">
+
+        <!-- Campos básicos do formulário -->
+        <label for="nome">Nome Completo:</label>
+        <input id="nome" type="text" name="nome" placeholder="Seu Nome" required>
+
+        <label for="email">Seu E-mail:</label>
+        <input id="email" type="email" name="email" placeholder="Seu Email" required>
+
+        <label for="idade">Idade:</label>
+        <input id="idade" type="number" name="idade" placeholder="Sua idade" min="3" max="10">
+
+        <label for="senha">Senha:</label>
+        <input id="senha" type="password" name="senha" placeholder="Crie uma senha">
+
+        <!-- Campos de entrada variados -->
+        <input type="url" name="site" placeholder="Seu site">
+        <input type="file" name="arquivo">
+        <input type="tel" name="telefone" placeholder="Seu telefone">
+        <input type="search" name="pesquisar" placeholder="Pesquisar">
+        <input type="color" name="cor">
+
+        <!-- Controle de escala com range -->
+        <input type="range" name="escala" min="1" max="3">
+
+        <!-- Opções de seleção com checkboxes -->
+        <div class="check">
+            <label><input type="checkbox" name="html"> HTML</label>
+            <label><input type="checkbox" name="css"> CSS</label>
+            <label><input type="checkbox" name="php"> PHP</label>
+        </div>
+
+        <!-- Seleção de gênero com radio buttons -->
+        <div class="check">
+            <h3>Informe seu Gênero</h3>
+            <label><input type="radio" name="genero" value="m" checked> Masculino</label>
+            <label><input type="radio" name="genero" value="f"> Feminino</label>
+        </div>
+
+        <!-- Seleção de datas -->
+        <input type="date" name="data">
+        <input type="time" name="hora">
+        <input type="datetime-local" name="data-hora">
+        <input type="month" name="mes">
+        <input type="week" name="semana">
+
+        <!-- Botões de envio -->
+        <input type="image" name="bt-image" src="/img/bt.png">
+        <input type="reset" name="limpar" value="Apagar Campos">
+        <input type="submit" name="enviar" value="Cadastrar">
+        <button type="submit">Enviar seus dados</button>
+    </form>
+</body>
+
+</html>
