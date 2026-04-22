@@ -1,0 +1,11 @@
+Aqui eu usei "transform: skew(-30deg);" para deixar a border de 
+"tituloBorda" em um formato irregular, então para o texto de "titulo"
+ficar correto, precisei colocar "transform: skew(30deg);" dentro
+do mesmo.
+
+<div class="tituloBorda">
+	<h1 class="titulo">agosto</h1>
+</div>
+
+transform: skew(-30deg);
+transform: skew(30deg);
